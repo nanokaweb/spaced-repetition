@@ -22,4 +22,4 @@ tag: ## Creates a new signed git tag
 	chag update $(TAG)
 	git add --all
 	git commit -m 'Release $(TAG)'
-	git tag -s $(TAG) -m 'Release $(TAG)'
+	git tag $(TAG) -m 'Release $(TAG)'
