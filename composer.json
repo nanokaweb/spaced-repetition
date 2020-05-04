@@ -1,0 +1,33 @@
+{
+    "name": "nanokaweb/spaced-repetition",
+    "description": "Spaced repetition algorithms (SuperMemo algorithm SM-2)",
+    "keywords": ["sm2", "spaced repetition"],
+    "license": "MIT",
+    "require": {
+        "php": "^7.2",
+        "nesbot/carbon": "^2.33"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0",
+        "friendsofphp/php-cs-fixer": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "NanokaWeb\\SpacedRepetition\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NanokaWeb\\SpacedRepetition\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "platform": {
+            "php": "7.2"
+        },
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}

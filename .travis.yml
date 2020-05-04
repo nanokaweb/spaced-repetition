@@ -1,0 +1,18 @@
+language: php
+
+matrix:
+  fast_finish: true
+  include:
+    - php: 7.2
+    - php: 7.2
+      env: 'COMPOSER_FLAGS="--prefer-stable --prefer-lowest"'
+
+cache:
+  directories:
+    - $HOME/.composer/cache
+
+install:
+  - composer update ${COMPOSER_FLAGS} --no-interaction
+
+script:
+    - make tests
